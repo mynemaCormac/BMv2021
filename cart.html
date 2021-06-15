@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Your Shopping Cart | Bead Merch</title>
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/cart.css">
+</head>
+<body>
+	<header>
+		<div class="nav-left">
+			<a onclick="toggleNav()"><i class="fas fa-bars"></i></a>
+		</div>
+		<div class="nav-mid">
+			<h1 class="header-title"><a href="index.html">Bead Merch</a></h1>
+		</div>
+		<div class="nav-right">
+			<a href="#"><i class="fas fa-shopping-cart"></i><span id="cartCount">10</span></a>
+		</div>
+	</header>
+	<div class="container">
+		<h2>SHOPPING CART</h2>
+		<div class="cart">
+			<div class="cart-item">
+				<div class="cart-left">
+					<img src="./img/2.jpg" />
+					<div class="item-desc">
+						<h3>Orange Dog Keychain
+						<small>₱ 100</small></h3>
+						<a>Remove</a>
+					</div>
+				</div>
+				<div class="cart-right">
+					<label><small>QUANTITY</small></label>
+					<div class="btn-group">
+						<input class="btn btn-bare" type="button" name="" value="-" />
+						<input class="btn btn-bare" type="number" name="" value="2" />
+						<input class="btn btn-bare" type="button" name="" value="+" />
+					</div>
+					<h3>₱ 200</h3>
+				</div>
+			</div>
+			<div class="cart-item">
+				<div class="cart-left">
+					<img src="./img/11.jpg" />
+					<div class="item-desc">
+						<h3>Blue Beaded Bracelet
+						<small>₱ 150</small></h3>
+						<a>Remove</a>
+					</div>
+				</div>
+				<div class="cart-right">
+					<label><small>QUANTITY</small></label>
+					<div class="btn-group">
+						<input class="btn btn-bare" type="button" name="" value="-" />
+						<input class="btn btn-bare" type="number" name="" value="2" />
+						<input class="btn btn-bare" type="button" name="" value="+" />
+					</div>
+					<h3>₱ 300</h3>
+				</div>
+			</div>
+		</div>
+		<div class="checkout">
+			<div class="checkout-left">
+				<small>SPECIAL INSTRUCTIONS FOR SELLER</small>
+				<textarea id="txtInstructions"></textarea>
+			</div>
+			<div class="checkout-right">
+				<h2>₱ 450
+					<small>Taxes and shipping are calculated at checkout</small>
+				</h2>
+				<button class="btn">CHECKOUT</button>
+			</div>
+		</div>
+	</div>
+	<footer></footer>
+</body>
+</html>

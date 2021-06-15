@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bead Merch</title>
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+	<header>
+		<div class="nav-left">
+			<a onclick="toggleNav()"><i class="fas fa-bars"></i></a>
+		</div>
+		<div class="nav-mid">
+			<h1 class="header-title"><a href="#">Bead Merch</a></h1>
+		</div>
+		<div class="nav-right">
+			<a href="cart.html"><i class="fas fa-shopping-cart"></i><span id="cartCount">10</span></a>
+		</div>
+	</header>
+	<div class="container-nav">
+		<nav>
+			<h5 class="side-nav-title">CATEGORIES</h5>
+			<div class="side-nav">
+				<a href="#keychains" onclick="toggleNav()">Keychains</a>
+				<a href="#bracelets" onclick="toggleNav()">Bracelets</a>
+				<a href="#necklaces" onclick="toggleNav()">Necklaces</a>
+				<a href="#corsages" onclick="toggleNav()">Corsages</a>
+				<a href="#others" onclick="toggleNav()">Others</a>
+			</div>
+		</nav>
+		<div class="side-nav-placeholder">&nbsp;</div>
+		<section class="products">
+			<h2 id="keychains">KEYCHAINS</h2>
+			<div class="product-cards">
+				<div class="product-card" id="prod2" onclick="toggleProduct(2)">
+					<img src="./img/2.jpg">
+					<button class="btn">VIEW</button>
+					<div class="product-card-desc">
+						<h5>Orange Dog Keychain</h5>
+						<p>₱ 100</p>
+					</div>
+				</div>
+				<div class="product-card">
+					<img src="./img/2.jpg">
+					<button class="btn">VIEW</button>
+					<div class="product-card-desc">
+						<h5>Orange Dog Keychain</h5>
+						<p>₱ 100</p>
+					</div>
+				</div>
+				<div class="product-card">
+					<img src="./img/2.jpg">
+					<button class="btn">VIEW</button>
+					<div class="product-card-desc">
+						<h5>Orange Dog Keychain</h5>
+						<p>₱ 100</p>
+					</div>
+				</div>
+				<div class="product-card">
+					<img src="./img/2.jpg">
+					<button class="btn">VIEW</button>
+					<div class="product-card-desc">
+						<h5>Orange Dog Keychain</h5>
+						<p>₱ 100</p>
+					</div>
+				</div>
+				<div class="product-card">
+					<img src="./img/2.jpg">
+					<button class="btn">VIEW</button>
+					<div class="product-card-desc">
+						<h5>Orange Dog Keychain</h5>
+						<p>₱ 100</p>
+					</div>
+				</div>
+			</div>
+			<h2 id="bracelets">BRACELETS</h2>
+			<div class="product-cards">
+				<div class="product-card">
+					<img src="./img/11.jpg">
+					<button class="btn">VIEW</button>
+					<div class="product-card-desc">
+						<h5>Blue Beaded Bracelet</h5>
+						<p>₱ 150</p>
+					</div>
+				</div>
+				<div class="product-card">
+					<img src="./img/11.jpg">
+					<button class="btn">VIEW</button>
+					<div class="product-card-desc">
+						<h5>Blue Beaded Bracelet</h5>
+						<p>₱ 150</p>
+					</div>
+				</div>
+				<div class="product-card">
+					<img src="./img/11.jpg">
+					<button class="btn">VIEW</button>
+					<div class="product-card-desc">
+						<h5>Blue Beaded Bracelet</h5>
+						<p>₱ 150</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<footer></footer>
+
+	<!-- Modals -->
+	<div class="page-mask"></div>
+	<div class="product-modal">
+		<img src="./img/2.jpg" />
+		<div class="product-modal-desc">
+			<h3>Orange Dog Keychain
+				<p>₱ 100</p>
+			</h3>
+			<form class="product-modal-form">
+				<label>QUANTITY</label>
+				<div class="btn-group">
+					<input class="btn btn-bare" type="button" onclick="changeQty(-1)" value="-" />
+					<input class="btn btn-bare" type="number" id="itemQty" value="0" />
+					<input class="btn btn-bare" type="button" onclick="changeQty(1)" value="+" />
+				</div>
+				<button class="btn btn-block btn-reverse">ADD TO CART</button>
+			</form>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>
