@@ -1,2 +1,2 @@
 # BMv2021
- Online Shopping Website using vanilla HTML, CSS and Javascript
+ Online Shopping Website using vanilla HTML, CSS and Javascript... *Under development*
