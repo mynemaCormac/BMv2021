@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Billing | Bead Merch</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/billing.css">
+</head>
+<body>
+	<header>
+		<div class="nav-mid">
+			<h1 class="header-title"><a>Bead Merch</a></h1>
+		</div>
+	</header>
+	<div class="container-sidebar-right">
+		<form>
+			<h2>BILLING INFORMATION</h2>
+			<div class="form-group">
+				<label>Full Name</label>
+				<div class="input-group-for3">
+					<input type="text" name="" placeholder="First name" required autofocus />
+					<input type="text" name="" placeholder="Middle name (Optional)" />
+					<input type="text" name="" placeholder="Last name" required />
+				</div>
+			</div>
+			<div class="form-group">
+				<label>Contact Information</label>
+				<input type="text" name="" placeholder="Billing address (e.g. #18, Haandita st., Brgy. Dasay, San Juan, La Union)" required />
+				<div class="input-group-for2">
+					<input type="text" name="" placeholder="Phone/Telephone" required />
+					<input type="text" name="" placeholder="Email address" required />
+				</div>
+			</div>
+			<div class="form-group">
+				<label>Payment Details</label>
+				<div class="select-group-for2">
+					<select name="" required>
+						<option>Select Delivery Method</option>
+						<option>Shipping inside Metro Manila</option>
+						<option>Shipping outside Metro Manila</option>
+					</select>
+					<select name="" required>
+						<option>Select Payment Method</option>
+						<option>BDO</option>
+						<option>Metro Bank</option>
+						<option>Smart Padala</option>
+						<option>Paymaya</option>
+					</select>
+				</div>
+				<div class="input-group-for2">
+					<input type="number" name="" placeholder="Card Number (e.g. 9821 8231 XXXX XXXX)" required />
+				</div>
+			</div>
+			<small><b>Note:</b> Please review the form before finalizing your order.</small>
+			<div class="inline-btn-group">
+				<button class="btn">PAY YOUR ORDER</button>
+				<button class="btn btn-reverse">Return to cart</button>
+			</div>
+		</form>
+		<div class="right-sidebar">
+			<h3 class="right-sidebar-title">ITEMS IN YOUR CART</h3>
+			<div class="cart-mini">
+				<div class="cart-mini-item">
+					<div class="left">
+						<img src="./img/2.jpg" />
+						<div class="left-desc">
+							<h4>Orange Dog Keychain</h4>
+							<small>₱100 × 3</small>
+						</div>
+					</div>
+					<div class="right">
+						<h4>₱300</h4>
+					</div>
+				</div>
+				<div class="cart-mini-item">
+					<div class="left">
+						<img src="./img/11.jpg" />
+						<div class="left-desc">
+							<h4>Blue Beaded Bracelet</h4>
+							<small>₱150 × 4</small>
+						</div>
+					</div>
+					<div class="right">
+						<h4>₱600</h4>
+					</div>
+				</div>
+			</div>
+			<hr />
+			<div class="space-between">
+				<p>Subtotal</p>
+				<h4>₱900</h4>
+			</div>
+			<div class="space-between">
+				<p>Shipping</p>
+				<h4>₱150</h4>
+			</div>
+			<hr />
+			<div class="space-between">
+				<p>TOTAL</p>
+				<h3>₱1,050</h3>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

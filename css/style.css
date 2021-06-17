@@ -24,6 +24,9 @@ html {
 a {
 	display: inline-block;
 }
+u {
+	text-decoration: underline;
+}
 .btn {
 	width: fit-content;
 	color: white;
@@ -65,9 +68,34 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none; 
   margin: 0; 
 }
-/* Firefox */
 input[type=number] {
-  -moz-appearance: textfield;
+  -moz-appearance: textfield; /* Firefox */
+}
+	
+			/* form input styles */
+.input-group-for3 {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr));
+	gap: 1em;
+}
+.input-group-for2,
+.select-group-for2  {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(21.25rem, 1fr));
+	gap: 1em;
+}
+.inline-btn-group {
+	display: block;
+}
+
+.space-between {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 0.625em;
+	padding-bottom: 0.625em;
+}
+.text-orange {
+	color: var(--org-drk);
 }
 
 /* Header styles */
@@ -145,7 +173,7 @@ footer {
 	padding: 1em 5em;
 	margin: 0 auto;
 }
-.container-nav {
+.container-nav-left {
 	padding: 1em 4em;
 	display: grid;
 	grid-template-columns: 1fr 4fr;
@@ -327,7 +355,7 @@ nav.sticky {
 	.container {
 		padding: 1em 1em;
 	}
-	.container-nav {
+	.container-nav-left {
 		display: block;
 	}
 	nav {
